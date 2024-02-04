@@ -61,12 +61,12 @@ const addData = (data) => {
     localStorage.setItem("product", JSON.stringify([data]));
   }
 };
-const money = () => {
+const money = async () => {
   let count = 0;
-  const data = getStData();
-  console.log(data.length);
+  const data = await getStData();
+
   try {
-    for (let i = 0; i < getStData().length; i++) {
+    for (let i = 0; i < data.length; i++) {
       if (data[i] === 0) {
         count = 0;
       } else {
