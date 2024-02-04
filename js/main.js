@@ -64,7 +64,7 @@ const addData = (data) => {
 const money = () => {
   let count = 0;
   const data = getStData();
-  for (let i = 0; i < data.length; i++) {
+  for (let i = 0; i < getStData().length; i++) {
     if (data[i] === 0) {
       count = 0;
     } else {
