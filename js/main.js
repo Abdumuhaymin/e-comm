@@ -29,8 +29,9 @@ const renderStorage = () => {
         <ul class="item__list">
         <li>
         <ul class="product__list">
-         <button class="del__btn" data-id="${item.id}"></button>
-         <img src="${item.image}" alt="product" class="product__img">
+         <li><button class="del__btn" data-id="${item.id}"></button></li>
+         <li><img src="${item.image}" alt="product" class="product__img"></li>
+         <li><p>${item.title}</p></li>
         </ul>
         </li>
         <li>
@@ -77,7 +78,7 @@ const money = () => {
     console.log(error);
   }
 
-  return count;
+  return count.length > 5 ? count.slice(0, 5) : count;
 };
 money();
 const renderData = (data) => {
