@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="shortcut icon" href="./img/favicon.svg" type="image/x-icon">
+    <title>e-comm</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header id="header">
+            <div class="container">
+                <div class="header__top">
+                    <div class="header__selectors">
+                        <select name="language" id="lang">
+                            <option value="eng">ENG</option>
+                            <option value="rus">RUS</option>
+                            <option value="uzb">UZB</option>
+                        </select>
+                        <select name="currency" id="curr">
+                            <option value="usd">USD</option>
+                            <option value="rub">RUB</option>
+                            <option value="uzs">UZS</option>
+                        </select>
+                    </div>
+                    <div class="header__menu">
+                        <ul class="header__menu_list">
+                            <li class="header__menu_item">
+                                <a href="#" class="header__menu_link"><span class="prof">My profile</span></a>
+                            </li>
+                            <li class="header__menu_item">
+                                <button id="cart"></button>
+                                <span class="count">0</span>
+                            </li>
+                            <li class="header__menu_item"><a href="#" class="items">Items</a></li>
+                            <li class="header__menu_item"><a href="#" class="srcPrice"><span>$0.00</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="header_bottom">
+                    <div class="logo__box">
+                        <a href="#">
+                            <img src="../img/logo.svg" alt="logo">
+                        </a>
+                    </div>
+                    <ul class="header__list">
+                        <li class="header__item"><a href="#" id="current" class="header__link">HOME</a></li>
+                        <li class="header__item"><a href="#" class="header__link">BAGS</a></li>
+                        <li class="header__item"><a href="#" class="header__link">SNEAKERS</a></li>
+                        <li class="header__item"><a href="#" class="header__link">BELT</a></li>
+                        <li class="header__item"><a href="#" class="header__link">CONTACT</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <main>
+            <section id="action">
+                <div class="container">
+                    <div class="slider">
+                        <ul class="slider__list">
+                            <li class="slider__item">
+                                <img src="./img/bannerSlide.png" alt="offers">
+                            </li>
+                            <li class="slider__item">
+                                <img src="./img/bannerSlide.png" alt="offers">
+                            </li>
+                            <li class="slider__item">
+                                <img src="./img/bannerSlide.png" alt="offers">
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="discount">
+                        <ul class="discount__list">
+                            <li class="discount__item">
+                                <img class="banner__img" src="../img/banner1.png" alt="ban">
+                            </li>
+                            <li class="discount__item">
+                                <img class="banner__img" src="../img/banner2.png" alt="ban">
+                            </li>
+                            <li class="discount__item">
+                                <img class="banner__img" src="../img/banner3.png" alt="ban">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section id="search">
+                <div class="container">
+                    <div class="search__box">
+                        <input class="input" type="text" placeholder="Search query...">
+                        <button type="button" id="src">Search</button>
+                    </div>
+                </div>
+
+            </section>
+            <section id="bestSeller">
+                <div class="container">
+                    <div class="content__box">
+                        <h2 class="best__title">BEST SELLER</h2>
+                        <div class="tabs">
+                            <button id="btn1" class="tab__btn active">All</button>
+                            <button id="btn2" class="tab__btn " data-id="/electronics">Electronics</button>
+                            <button id="btn3" class="tab__btn " data-id="/jewelery">Jewelery</button>
+                            <button id="btn4" class="tab__btn " data-id="/men's clothing">Men's clothing</button>
+                            <button id="btn5" class="tab__btn " data-id="/women's clothing">Women's clothing</button>
+                        </div>
+                        <ul class="data">
+
+                        </ul>
+                        <button class="load">LOAD MORE</button>
+                    </div>
+                </div>
+            </section>
+            <section id="amenities">
+                <ul class="amenities__list">
+                    <li class="amenities__item">
+                        <div class="amenities__card">
+                            <img src="./img/shipping.svg" alt="shipping">
+                            <p class="amenities__sub">FREE SHIPPING</p>
+                        </div>
+                    </li>
+                    <li class="amenities__item">
+                        <div class="amenities__card">
+                            <img src="./img/refund.svg" alt="refund">
+                            <p class="amenities__sub">100% REFUND</p>
+                        </div>
+                    </li>
+                    <li class="amenities__item">
+                        <div class="amenities__card">
+                            <img src="./img/support.svg" alt="support">
+                            <p class="amenities__sub">SUPPORT 24/7</p>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+        </main>
+    </div>
+    <footer id="footer">
+        <div class="container">
+            <ul class="footer__list">
+                <li class="footer__item">
+                    <div class="main">
+                        <a href="#">
+                            <img src="./img/logo.svg" alt="logo">
+                        </a>
+                        <p class="main__text">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                            been the industry's standard dummy text ever.Since the 1500s, when an unknown printer.
+                        </p>
+                    </div>
+                </li>
+                <li class="footer__item">
+                    <div class="follow">
+                        <h3 class="follow__title">
+                            Follow Us
+                        </h3>
+                        <p class="follow__text">
+                            Since the 1500s, when an unknown printer took a galley of type and scrambled.
+                        </p>
+                        <ul class="follow__list">
+                            <li class="follow__item">
+                                <a href="#" class="follow__socialM">
+                                    <img src="./img/facebook.svg" alt="facebook">
+                                </a>
+                            </li>
+                            <li class="follow__item">
+                                <a href="#" class="follow__socialM">
+                                    <img src="./img/twitter.svg" alt="twitter">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="footer__item">
+                    <div class="contact">
+                        <h3 class="contact__title">Contact Us</h3>
+                        <p class="contact__text">E-Comm , 4578 Marmora Road, Glasgow D04 89GR</p>
+                    </div>
+                </li>
+            </ul>
+            <div class="footerBottom">
+                <ul class="footerBottom__list">
+                    <li class="footerBottom__item">
+                        <p class="footerBottom__text">© 2018 Ecommerce theme by www.bisenbaev.com</p>
+                    </li>
+                    <li class="footerBottom__item">
+                        <ul class="brand__list">
+                            <li class="brand__item">
+                                <img src="./img/wester.svg" alt="wester" class="payment__img">
+                            </li>
+                            <li class="brand__item">
+                                <img src="./img/master.svg" alt="master" class="payment__img">
+                            </li>
+                            <li class="brand__item">
+                                <img src="./img/payPal.svg" alt="payPal" class="payment__img">
+                            </li>
+                            <li class="brand__item">
+                                <img src="./img/visa.svg" alt="visa" class="payment__img">
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <div class="cart">
+        <div class="cart__box">
+            <div class="container">
+                <button id="closeCart"></button>
+                <ul class="cart__heder">
+                    <li class="cart__item">PRODUCT</li>
+                    <li class="cart__item">PRICE</li>
+                    <li class="cart__item">QTY</li>
+                </ul>
+                <ul class="cart__list"></ul>
+                <ul class="payment__box">
+                    <li class="payment__item">
+                        <div class="voucher__box">
+                            <input class="redemInput" type="text" placeholder="Voucher code">
+                            <button id="redem">Redeem</button>
+                        </div>
+                    </li>
+                    <li class="payment__item">
+                        <ul class="fee__list">
+                            <li class="fee__item">
+                                <ul class="sub__list">
+                                    <li class="sub__item">
+                                        <p class="item__text">Subtotal</p>
+                                    </li>
+                                    <li class="sub__item">
+                                        <p class="fee__amount">$0</p>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="fee__item">
+                                <ul class="sub__list">
+                                    <li class="shipping__item">
+                                        <p class="item__text">Shipping fee</p>
+                                    </li>
+                                    <li class="shipping__item">
+                                        <p class="item__text">$20</p>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="fee__item">
+                                <ul class="sub__list">
+                                    <li class="shipping__item">
+                                        <p class="item__text">Coupon</p>
+                                    </li>
+                                    <li class="shipping__item">
+                                        <p class="item__text">No</p>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul class="total__list">
+                            <li class="total__item">
+                                <p class="total__text">Total</p>
+                            </li>
+                            <li class="total__item">
+                                <p class="total__amount">$0</p>
+                            </li>
+                        </ul>
+                        <button id="check">Check out</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="./js/slick.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

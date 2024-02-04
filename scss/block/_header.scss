@@ -1,0 +1,120 @@
+.header__menu_link::before {
+    display: inline-block;
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-image: url(../img/profile.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    margin-right: 3px;
+}
+.header__menu_link,
+.srcPrice {
+    display: flex;
+    align-items: center;
+}
+.srcPrice::after {
+    content: "";
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-image: url(../img/search.svg);
+    margin-left: 7px;
+}
+.header__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 48px;
+    padding-bottom: 17px;
+    border-bottom: 2px solid #fafafb;
+}
+.header__menu_list {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+#cart {
+    padding: 12px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-image: url(../img/cart.svg);
+    border: none;
+    background-color: transparent;
+}
+.header__menu_item {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.count {
+    color: #ffffff;
+    font-size: 10px;
+    font-weight: 700;
+    line-height: 150%;
+    letter-spacing: 0.5px;
+    text-align: center;
+    padding: 3px 7px 2px 7px;
+    background-color: #fb7181;
+    border-radius: 50%;
+    border: 2px solid #ffffff;
+    position: absolute;
+    top: -11px;
+    right: -12px;
+}
+#curr,
+#lang {
+    border: none;
+    outline: none;
+}
+.prof {
+    color: #262626;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+.items {
+    color: #262626;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+.srcPrice {
+    color: #929292;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+.header_bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header__list {
+    display: flex;
+    align-items: center;
+    gap: 98px;
+}
+.header__link {
+    color: #262626;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 36px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+#current,
+.header__link:hover {
+    color: #40bfff;
+}

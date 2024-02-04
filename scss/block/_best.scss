@@ -1,0 +1,121 @@
+.content__box {
+    text-align: center;
+}
+.data {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-bottom: 23px;
+}
+.item {
+    width: 290px;
+    gap: 34px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+.card__img {
+    width: 290px;
+    height: 276px;
+}
+.img {
+    height: inherit;
+    width: inherit;
+    object-fit: contain;
+}
+.item__name {
+    color: #223263;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 150%;
+    letter-spacing: 0.5px;
+    text-align: left;
+}
+.starList {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 13px;
+}
+.price__box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.productPrice {
+    color: #40bfff;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 180%;
+    letter-spacing: 0.5px;
+    text-align: left;
+    margin-right: 13px;
+}
+.realPrice {
+    color: #9098b1;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: 0.5px;
+    text-align: left;
+    text-decoration-line: line-through;
+    margin-right: 8px;
+}
+.discountPrice {
+    color: #fb7181;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 150%;
+    letter-spacing: 0.5px;
+    text-align: left;
+}
+.addCart {
+    border: none;
+    width: 80%;
+    border-radius: 10px;
+    padding: 30px;
+    background-color: blueviolet;
+    background-image: url(../img/cart-plus.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 1px solid transparent;
+}
+.addCart:hover,
+.addCart:active {
+    border: 1px solid blueviolet;
+    background-color: transparent;
+    background-image: url(../img/cart-plus-fill.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.tab__btn {
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid transparent;
+    color: #262626;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 33px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+.tab__btn:hover,
+.active {
+    color: #40bfff;
+    border-bottom: 2px solid #40bfff;
+}
+.tabs {
+    margin-bottom: 23px;
+}
+.load {
+    color: #33a0ff;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    letter-spacing: 0%;
+    text-align: left;
+    border: none;
+    background-color: transparent;
+    border-bottom: 3px solid #33a0ff;
+}
+#bestSeller {
+    padding-bottom: 121px;
+}

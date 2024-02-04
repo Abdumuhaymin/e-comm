@@ -1,0 +1,23 @@
+#amenities {
+    padding-top: 115px;
+    padding-bottom: 137px;
+}
+.amenities__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1091px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.amenities__item {
+    text-align: center;
+}
+.amenities__sub {
+    color: #22262a;
+    font-size: 27px;
+    font-weight: 500;
+    line-height: 41px;
+    letter-spacing: 0%;
+    text-align: left;
+}

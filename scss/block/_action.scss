@@ -1,0 +1,71 @@
+.slick-track {
+    display: flex;
+    align-items: center;
+    gap: 1px;
+}
+.slick-list {
+    overflow: hidden;
+}
+.slick-slide {
+    width: 1500px;
+    height: 654px;
+}
+.slick-slider {
+    position: relative;
+}
+.slick-prev {
+    position: absolute;
+    top: 50%;
+    left: 35px;
+    z-index: 1;
+    font-size: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-image: url(../img/left.svg);
+    padding: 20px;
+    background-color: transparent;
+    border: none;
+}
+.slider {
+    margin-left: auto;
+    margin-right: auto;
+}
+.slick-next {
+    position: absolute;
+    right: 35px;
+    top: 50%;
+    font-size: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-image: url(../img/right.svg);
+    padding: 20px;
+    background-color: transparent;
+    border: none;
+}
+.discount {
+    position: absolute;
+    top: 454px;
+}
+#action {
+    position: relative;
+    padding-bottom: 329px;
+}
+.discount__item {
+    width: 400px;
+    height: 342px;
+    background-color: #f6f6f6;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.discount__list {
+    display: flex;
+    align-items: center;
+    gap: 0;
+}
+.banner__img {
+    width: 100%;
+    height: inherit;
+    object-fit: contain;
+}
