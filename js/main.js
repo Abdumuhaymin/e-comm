@@ -61,9 +61,9 @@ const addData = (data) => {
     localStorage.setItem("product", JSON.stringify([data]));
   }
 };
-const money = async () => {
+const money = () => {
   let count = 0;
-  const data = await getStData();
+  const data = getStData();
 
   try {
     for (let i = 0; i < data.length; i++) {
