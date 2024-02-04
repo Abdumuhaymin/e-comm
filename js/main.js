@@ -35,7 +35,7 @@ const renderStorage = () => {
         </li>
         <li>
         <ul class="amount__list">
-        <p class="product__price">${item.price}</p>
+        <p class="product__price">$${item.price}</p>
         <p class="product__price">1</p>
         </ul>
         </li>
