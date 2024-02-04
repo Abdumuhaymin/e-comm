@@ -64,13 +64,19 @@ const addData = (data) => {
 const money = () => {
   let count = 0;
   const data = getStData();
-  for (let i = 0; i < getStData().length; i++) {
-    if (data[i] === 0) {
-      count = 0;
-    } else {
-      count = count + Number(data[i].price);
+  console.log(data.length);
+  try {
+    for (let i = 0; i < getStData().length; i++) {
+      if (data[i] === 0) {
+        count = 0;
+      } else {
+        count = count + Number(data[i].price);
+      }
     }
+  } catch (error) {
+    console.log(error);
   }
+
   return count;
 };
 money();
