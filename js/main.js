@@ -134,8 +134,11 @@ const totalFee = () => {
   }
 };
 totalFee();
-const addCount = () => {
-  count.innerHTML = getStData().length;
+const addCount = async () => {
+  const data = await getStData();
+  try {
+    count.innerHTML = getStData().length;
+  } catch (error) {}
 };
 const trueRender = async (e) => {
   try {
